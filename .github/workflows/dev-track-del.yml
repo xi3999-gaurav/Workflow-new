@@ -39,7 +39,7 @@ jobs:
       - name: Delete dev track
         uses: ./.github/actions/track-delete
         with:
-          path: ${{ env.TRACK_DIR }}/${{ inputs.slug }}-dev/${{ inputs.slug }}
+          path: ${{ env.TRACK_DIR }}/${{ inputs.slug }}-dev
       
       - name: Delete dev dir
         uses: JesseTG/rm@v1.0.3
@@ -49,5 +49,5 @@ jobs:
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Creating dev version of ${{ inputs.slug }}-dev
+          commit_message: Deleting the dev version of ${{ inputs.slug }}-dev
 
