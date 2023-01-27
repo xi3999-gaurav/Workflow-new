@@ -50,6 +50,15 @@ jobs:
         with:
           path: ${{ env.TRACK_DIR }}/${{ inputs.slug }}
           id: ${{ env.ID }}
+          
+      - name: New Dev File create
+        run: |
+          cd ${{ env.TRACK_DIR }}
+          touch track-dev.yml
+          # Clear track-dev.yml
+          echo "---" > track-dev.yml
+          echo "tracks:" >> track-dev.yml
+          echo "- { slug: ${{ inputs.slug }} , id: ${{ env.ID }} }" >>track-dev.yml
 
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
