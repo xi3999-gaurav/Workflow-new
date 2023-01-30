@@ -4,7 +4,7 @@
 # This workflow will promote a DEV track back to its PROD version
 #
 ##############################################################################
-name: promote
+name: Ready-to-Merge
 
 env:
   INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
