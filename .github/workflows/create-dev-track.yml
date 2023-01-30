@@ -4,7 +4,7 @@
 # This workflow will convert the provided track-slug into a DEV variant
 #
 ##############################################################################
-name: convert-dev-track
+name: Convert-Dev-Track
 
 env:
   INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
