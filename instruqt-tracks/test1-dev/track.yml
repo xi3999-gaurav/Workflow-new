@@ -1,14 +1,12 @@
 slug: test1-dev
-id: xcfl6ekgmx9b
 title: DEV - Sandbox container
 teaser: Get started quickly with a single container-based sandbox host
-description: Get started quickly with a container-based sandbox host. Choose a container
-  when you need a fast, lightweight Linux system.
+description: Get started quickly with a container-based sandbox host. Choose a container when you need a fast, lightweight Linux system.
 icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
 tags:
-- dev
+  - dev
 owner: instruqt-support
 developers:
-- gaurav@instruqt.com
+  - gaurav@instruqt.com
 maintenance: true
-checksum: "17527296927085595610"
+checksum: "3039796737916957108"
